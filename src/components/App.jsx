@@ -18,6 +18,9 @@ import React, { useState } from "react";
 
 
 function App() {
+  
+  setInterval(getTime, 1000);
+  
   let systemTime = new Date().toLocaleTimeString();
   const [time, setTime] = useState(systemTime);
 
